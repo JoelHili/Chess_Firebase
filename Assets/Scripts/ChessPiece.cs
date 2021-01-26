@@ -81,12 +81,32 @@ public class ChessPiece : MonoBehaviour
         float x = xPos;
         float y = yPos;
 
-        x *= 0.66f;
-        y *= 0.66f;
+        x *= 0.63f * 2;
+        y *= 0.62f * 2;
 
-        x += -2.3f;
-        y += -2.3f;
+        x += -4.5f;
+        y += -4.4f;
 
         this.transform.position = new Vector3(x, y, -1f);
+	}
+
+    public int GetX()
+	{
+        return xPos;
+	}
+
+    public int GetY()
+	{
+        return yPos;
+	}
+
+    public void SetX(int _x)
+	{
+        xPos = _x;
+	}
+
+    public void SetY(int _y)
+	{
+        yPos = _y;
 	}
 }
